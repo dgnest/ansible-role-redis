@@ -1,0 +1,6 @@
+---
+- name: Installs redis server
+  sudo: yes
+  apt: pkg=redis-server state=latest
+  notify:
+    - start redis
