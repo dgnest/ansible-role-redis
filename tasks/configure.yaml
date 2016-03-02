@@ -1,0 +1,8 @@
+---
+
+- name: setup redis configuration
+  sudo: yes
+  template: src="{{ item.src }}" dest="{{ item.dest }}"
+  with_items: redis.templates
+  notify:
+    - restart redis-server
