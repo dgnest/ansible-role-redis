@@ -1,6 +1,7 @@
 ---
-- name: Installs redis server
-  sudo: yes
-  apt: pkg=redis-server state=latest
-  notify:
-    - start redis
+
+- include: common.yaml
+- include: install.yaml
+- include: configure.yaml
+- include: users.yaml
+- include: post_install.yaml

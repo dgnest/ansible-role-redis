@@ -1,9 +1,9 @@
 ---
 
-- name: start redis
+- name: start redis-server
   sudo: yes
-  service: name=redis-server state=started
+  service: name=redis-server state=started enabled=yes
 
-- name: restart redis
+- name: restart redis-server
   sudo: yes
-  service: name=redis-server state=restarted
+  service: name=redis-server state=restarted enabled=yes
