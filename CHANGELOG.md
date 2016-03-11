@@ -5,6 +5,11 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased][unreleased]
 
+## [1.0.4] - 2016-03-10
+
+### Added:
+- fixed
+
 ## [1.0.3] - 2016-03-02
 
 ### Added:
@@ -25,7 +30,8 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 ### Added:
 - fixed
 
-[unreleased]: https://github.com/hadenlabs/ansible-role-redis/compare/1.0.2...HEAD
+[unreleased]: https://github.com/hadenlabs/ansible-role-redis/compare/1.0.3...HEAD
+[1.0.3]: https://github.com/hadenlabs/ansible-role-redis/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/hadenlabs/ansible-role-redis/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/hadenlabs/ansible-role-redis/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/hadenlabs/ansible-role-redis/compare/0.0.0...1.0.0
