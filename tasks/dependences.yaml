@@ -1,6 +1,17 @@
 ---
 
-- name: Install packages via pip
+- name: Install redis common dependencies
+  sudo: yes
+  apt:
+    name: "{{ item.name }}"
+    state: present
+  when: redis_dependencies is defined
+  with_items: redis_dependencies
+  tags:
+    - apt
+    - dependencies
+
+- name: Install redis packages via pip
   sudo: yes
   pip: name="{{ item.name }}" state="{{ item.state}}"
   when: redis_pip_packages is defined
