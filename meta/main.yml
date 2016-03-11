@@ -3,7 +3,7 @@ galaxy_info:
   author: Luis Mayta
   description: Ansible role to install redis
   company: HadenLabs
-  version: 1.0.4
+  version: 1.0.5
   license: Mit
   min_ansible_version: 1.2
   platforms:
