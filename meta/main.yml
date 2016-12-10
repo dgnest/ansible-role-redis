@@ -2,7 +2,7 @@
 galaxy_info:
   author: Luis Mayta
   description: Ansible role to install redis
-  company: HadenLabs
+  company: Dgnest
   version: 1.0.5
   license: Mit
   min_ansible_version: 1.2
