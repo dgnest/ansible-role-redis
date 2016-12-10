@@ -65,7 +65,8 @@ Made with :heart: ️:coffee:️ and :pizza: by [dgnest][link-company].
 
 <!-- Other -->
 
-[link-cloudflare]: https://www.cloudflare.com
+[link-redis]: https://redis.org/
+[link-brew]: http://brew.sh/
 [link-luis]: https://github.com/luismayta
 [link-contributors]: AUTHORS
 [link-company]: https://github.com/dgnest
