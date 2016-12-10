@@ -3,4 +3,4 @@
   sudo: yes
   apt: pkg=redis-server state=latest
   notify:
-    - start redis
+    - start redis-server
