@@ -2,11 +2,11 @@
 
 - name: Install redis common dependencies
   become: true
-  apt:
+  package:
     name: "{{ item.name }}"
     state: present
   when: redis_dependencies is defined
-  with_items: redis_dependencies
+  with_items: "{{ redis_dependencies | default({}) }}"
   tags:
     - apt
     - dependencies
@@ -15,4 +15,4 @@
   become: true
   pip: name="{{ item.name }}" state="{{ item.state}}"
   when: redis_pip_packages is defined
-  with_items: redis_pip_packages
+  with_items: "{{ redis_pip_packages | default({}) }}"
