@@ -22,7 +22,6 @@ TEST = $(shell) $(SCRIPT_DIR)/test.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
 
-
 ansible_provision:
 	$(ANSIBLE_PROVISION)
 
