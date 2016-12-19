@@ -1,8 +1,8 @@
 ---
 
 - name: setup redis configuration
-  sudo: yes
+  become: true
   template: src="{{ item.src }}" dest="{{ item.dest }}"
-  with_items: redis.templates
+  with_items: "{{ redis.templates | default([]) }}"
   notify:
     - restart redis-server
