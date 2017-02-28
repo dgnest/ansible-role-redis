@@ -1,11 +1,6 @@
 ---
 # defaults file for redis
 
-redis:
-  templates:
-    - src: "redis.conf.j2"
-      dest: "{{ _redis_dir_etc }}/redis.conf"
-
 redis_pip_packages:
   - name: "redis"
     state: "present"

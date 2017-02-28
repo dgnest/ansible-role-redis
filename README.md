@@ -1,8 +1,8 @@
 # Ansible Role Redis
 
 <span class="badges" align="center">
+[![Ansible Role](https://img.shields.io/ansible/role/9598.svg?maxAge=2592000)](https://galaxy.ansible.com/dgnest/ansible-role-redis/)
 [![Build Status](https://travis-ci.org/dgnest/ansible-role-redis.svg)](https://travis-ci.org/dgnest/ansible-role-redis)
-[![Stories in Ready](https://badge.waffle.io/dgnest/ansible-role-redis.svg?label=ready&title=Ready)](http://waffle.io/dgnest/ansible-role-redis)
 [![GitHub issues](https://img.shields.io/github/issues/dgnest/ansible-role-redis.svg)](https://github.com/dgnest/ansible-role-redis/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
