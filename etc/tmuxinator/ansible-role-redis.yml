@@ -34,44 +34,35 @@ windows:
       panes:
         - editor:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
             - <%= ENV["EDITOR"] %>
         - docker:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
   - python:
       layout: main-vertical
       panes:
         - python:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
             - ipython
   - databases:
       layout: main-vertical
       panes:
         - postgresql:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
         - shell:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
   - docker:
       layout: main-vertical
       panes:
         - docker:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
         - shell:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
   - tools:
       layout: main-vertical
       panes:
         - watch:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
             - make watch
         - grip:
             - pyenv activate ansible-role-redis
-            - gvm pkgset use ansible-role-redis
             - make grip
