@@ -6,3 +6,5 @@
     state=present
   notify:
     - start redis-server
+  tags:
+    - redis
