@@ -3,6 +3,10 @@
 - name: setup redis configuration
   become: true
   template: src="{{ item.src }}" dest="{{ item.dest }}"
-  with_items: "{{ redis.templates | default([]) }}"
+  with_items: "{{ _redis.templates | default([]) }}"
+  when:
+    - _redis.templates is defined
   notify:
     - restart redis-server
+  tags:
+    - redis
